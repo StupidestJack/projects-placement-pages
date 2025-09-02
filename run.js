@@ -40,36 +40,51 @@ function createProjectCard(project) {
   const date = document.createElement('p');
   date.innerHTML = `<strong>日期：</strong> ${project.date || '未提供'}`;
 
-  // 🔗 自動導向新舊帳號
-  const link = document.createElement('a');
-  const baseURL = project.legacy
-    ? 'https://mamegoodbean2k.github.io/'
-    : 'https://stupidestjack.github.io/';
-  const pagePath = project.pages || '';
-  link.href = `${baseURL}${pagePath}`;
-  link.textContent = '🔗 前往頁面';
-  link.target = '_blank';
+  // 🔗 前往頁面（如果有）
+  if (project.pages) {
+    const baseURL = project.legacy
+      ? 'https://mamegoodbean2k.github.io/'
+      : 'https://stupidestjack.github.io/';
+    const link = document.createElement('a');
+    link.href = `${baseURL}${project.pages}`;
+    link.textContent = '🔗 前往頁面';
+    link.target = '_blank';
+    card.appendChild(link);
+  }
 
-  const gitlink = document.createElement('a');
-  const gitbaseURL = project.legacy
-    ? 'https://github.com/mamegoodbean2k/'
-    : 'https://github.com/stupidestjack/';
-  const gitpagePath = project.github || '';
-  gitlink.href = `${gitbaseURL}${gitpagePath}`;
-  gitlink.textContent = '🦝 前往GitHub';
-  gitlink.target = '_blank';
+  // 🦝 GitHub repo（如果有）
+  if (project.github) {
+    const gitbaseURL = project.legacy
+      ? 'https://github.com/mamegoodbean2k/'
+      : 'https://github.com/stupidestjack/';
+    const gitlink = document.createElement('a');
+    gitlink.href = `${gitbaseURL}${project.github}`;
+    gitlink.textContent = '🦝 前往 GitHub';
+    gitlink.target = '_blank';
+    card.appendChild(gitlink);
+  }
 
+  // 📦 下載連結（如果有）
+  if (project.download) {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = project.download;
+    downloadLink.textContent = '📦 下載專案';
+    downloadLink.target = '_blank';
+    card.appendChild(downloadLink);
+  }
+
+  // 🕰️ legacy 標籤
   const legacy = document.createElement('span');
   legacy.className = 'tag';
   legacy.textContent = project.legacy ? '🕰️ 舊帳號作品' : '🆕 新帳號作品';
+  card.appendChild(legacy);
 
   card.appendChild(title);
   card.appendChild(desc);
   card.appendChild(lang);
   card.appendChild(date);
-  card.appendChild(link);
-  card.appendChild(gitlink);
-  card.appendChild(legacy);
 
   return card;
 }
+
+
