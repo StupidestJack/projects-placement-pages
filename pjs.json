@@ -1,7 +1,7 @@
 [
   {
     "title": "Python赤石科技",
-    "description": "我用 Python 寫的一些赤石科技，建議先安裝 Python，最好是 3.9 ~ 3.10。",
+    "description": "我用 Python 寫的一些赤石科技，請先安裝Python 3.9+。",
     "language": "Python",
     "date": "2025-9-2",
     "pages": "holysh1ting-python-project/index.html",
@@ -30,3 +30,4 @@
     "legacy": true
   }
 ]
+
