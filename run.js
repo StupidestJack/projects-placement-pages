@@ -72,10 +72,6 @@ function createProjectCard(project) {
     downloadLink.target = '_blank';
     
   }
-
-  
-  
-
   card.appendChild(title);
   card.appendChild(desc);
   card.appendChild(lang);
