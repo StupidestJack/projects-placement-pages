@@ -73,7 +73,7 @@ function createProjectCard(project) {
     
   }
 
-  // 🕰️ legacy 標籤
+  
   
 
   card.appendChild(title);
@@ -85,6 +85,7 @@ function createProjectCard(project) {
 
   return card;
 }
+
 
 
 
