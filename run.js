@@ -61,7 +61,7 @@ function createProjectCard(project) {
     gitlink.href = `${gitbaseURL}${project.github}`;
     gitlink.textContent = '🦝 前往 GitHub';
     gitlink.target = '_blank';
-    card.appendChild(gitlink);
+    
   }
 
   // 📦 下載連結（如果有）
@@ -70,21 +70,21 @@ function createProjectCard(project) {
     downloadLink.href = project.download;
     downloadLink.textContent = '📦 下載專案';
     downloadLink.target = '_blank';
-    card.appendChild(downloadLink);
+    
   }
 
   // 🕰️ legacy 標籤
-  const legacy = document.createElement('span');
-  legacy.className = 'tag';
-  legacy.textContent = project.legacy ? '🕰️ 舊帳號作品' : '🆕 新帳號作品';
-  card.appendChild(legacy);
+  
 
   card.appendChild(title);
   card.appendChild(desc);
   card.appendChild(lang);
   card.appendChild(date);
+  card.appendChild(gitlink);
+  card.appendChild(downloadLink);
 
   return card;
 }
+
 
 
