@@ -1,0 +1,12 @@
+[
+  {
+    "title": "實驗用碼表",
+    "description": "支援多碼表的秒鐘碼表，且大概支援多語言",
+    "language": "HTML",
+    "date": "2024-8-17",
+    "pages": "forexperimentstopwatch\\stopwatch.html",
+    "github": "forexperimentstopwatch",
+    "feat": "ChatGPT",
+    "legacy": true
+  }
+]
