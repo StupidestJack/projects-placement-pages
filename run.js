@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       container.innerHTML = `<p style="color:red;">目前無法載入專案資料。</p>`;
       console.error('讀取 pjs.json 失敗：', err);
     });
+  console.log("別看我啊，害羞(,,・ω・,,)")
 });
 
 function createProjectCard(project) {
@@ -82,8 +83,9 @@ function createProjectCard(project) {
 
   return card;
 }
-
-
-
-
-
+function bomb() {
+  document.write("沒錯你找到了彩蛋，但你讓網頁報廢了，重新整理吧awa")
+}
+function scamself() {
+  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+}
