@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  fetch('https://stupidestjack.github.io/projects-placement-pages/pjs.json')
+  fetch('https://stupidestjack.github.io/projects-placement-pages/projects.json')
     .then(res => res.json())
     .then(data => {
       if (!Array.isArray(data)) {
-        console.error('❌ pjs.json 格式錯誤，應為陣列');
+        console.error('❌ projects.json 格式錯誤，應為陣列');
         return;
       }
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     })
     .catch(err => {
-      container.innerHTML = `<p style="color:red;">🚨 無法載入專案資料，請稍後再試。</p>`;
+      container.innerHTML = `<p style="color:red;">目前無法載入專案資料。</p>`;
       console.error('讀取 pjs.json 失敗：', err);
     });
 });
