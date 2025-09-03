@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function createProjectCard(project) {
+  let gitlink = null;
+  let downloadLink = null;
+
+
   const card = document.createElement('div');
   card.className = 'project-card';
 
@@ -57,16 +61,15 @@ function createProjectCard(project) {
     const gitbaseURL = project.legacy
       ? 'https://github.com/mamegoodbean2k/'
       : 'https://github.com/stupidestjack/';
-    const gitlink = document.createElement('a');
+    gitlink = document.createElement('a');
     gitlink.href = `${gitbaseURL}${project.github}`;
     gitlink.textContent = '🦝 前往 GitHub';
     gitlink.target = '_blank';
-    
   }
 
   // 📦 下載連結（如果有）
   if (project.download) {
-    const downloadLink = document.createElement('a');
+    downloadLink = document.createElement('a');
     downloadLink.href = project.download;
     downloadLink.textContent = '📦 下載專案';
     downloadLink.target = '_blank';
@@ -76,8 +79,9 @@ function createProjectCard(project) {
   card.appendChild(desc);
   card.appendChild(lang);
   card.appendChild(date);
-  card.appendChild(gitlink);
-  card.appendChild(downloadLink);
+  if (gitlink) card.appendChild(gitlink);
+  if (downloadLink) card.appendChild(downloadLink);
+
 
   return card;
 }
