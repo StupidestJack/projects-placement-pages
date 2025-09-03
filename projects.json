@@ -1,11 +1,11 @@
 [
   {
     "title": "Python赤石科技",
-    "description": "我用 Python 寫的一些赤石科技，少有使用Unlicense的專案。",
+    "description": "我用 Python 寫的一些赤石科技，屬於Unlicense的專案。",
     "language": "Python",
     "date": "2025-9-2",
-    "pages": "holysh1ting-python-project/index.html",
     "download": "https://github.com/StupidestJack/holysh1ting-python-project/archive/refs/heads/main.zip",
+    "github": "holysh1ting-python-project",
     "feat": "Copilot",
     "legacy": false
   },
@@ -14,7 +14,7 @@
     "description": "解決了億點點舊版專案櫃的毛病，舊版不再更新。",
     "language": "HTML",
     "date": "2025-9-2",
-    "pages": "fprojects-placement-pages/index.html",
+    "pages": "projects-placement-pages/index.html",
     "github": "projects-placement-pages",
     "feat": "Copilot",
     "legacy": false
