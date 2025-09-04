@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   //沒錯這條也是彩蛋
   if (Math.random() < 0.114514) {
-    console.error("汞汐你！成為了11.4154%打開console的幸運者的一人！");
+    console.error("汞汐你！成為了11.4514%打開console的幸運者的一人！");
     console.warn("不過好像沒什麼用就是了");
   }
   else console.log("別看我啊，害羞(,,・ω・,,)");
