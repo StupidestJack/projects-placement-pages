@@ -57,6 +57,8 @@ function createProjectCard(project) {
   const date = document.createElement('p');
   date.innerHTML = `<strong>日期：</strong> ${project.date || '未提供'}`;
 
+  const feat = document.createElement('p');
+  feat.innerHTML = `<strong>協作者：</strong> ${project.feat || '自行製作'}`;
   //GitHub
   const gitbaseURL = project.legacy
     ? 'https://github.com/mamegoodbean2k/'
@@ -89,6 +91,7 @@ function createProjectCard(project) {
   card.appendChild(title);
   card.appendChild(desc);
   card.appendChild(lang);
+  card.appendChild(feat);
   card.appendChild(date);
   card.appendChild(gitlink);
   if (downloadLink) card.appendChild(downloadLink);
