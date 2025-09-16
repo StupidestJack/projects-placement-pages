@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     //catch部分，感謝AI
     .catch(err => {
-      container.innerHTML = `<p style="color:red;">目前無法載入專案資料。</p>`;
+      container.innerHTML = `<p style="color:green;">挫賽Guru又在冥想了</p>`;
       //250904:把pjs.json改正了
       console.error('讀取 projects.json 失敗：', err);
     });
