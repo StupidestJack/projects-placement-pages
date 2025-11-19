@@ -1,5 +1,15 @@
 [
   {
+    "title": "Nightly Tree",
+    "description": "使用.NET 2.0寫的抗藍光小工具",
+    "language": "C#",
+    "date": "2025-11-19",
+    "download": "https://github.com/StupidestJack/NightlyTree/releases/download/%E6%AD%A3%E5%BC%8F%E7%89%88/NightlyTree.exe",
+    "github": "NightlyTree",
+    "feat": "Copilot",
+    "legacy": false
+  },
+  {
     "title": "Python赤石科技",
     "description": "我用 Python 寫的一些赤石科技，屬於Unlicense的專案。",
     "language": "Python",
