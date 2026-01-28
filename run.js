@@ -55,7 +55,10 @@ function createProjectCard(project) {
   lang.innerHTML = `<strong>語言：</strong> ${project.language || '未提供'}`;
   
   const date = document.createElement('p');
-  date.innerHTML = `<strong>日期：</strong> ${project.date || '未提供'}`;
+  date.innerHTML = `<strong>建立日期：</strong> ${project.date || '未提供'}`;
+
+  const ver = document.createElement('p');
+  ver.innerHTML = `<strong>版本：</strong> ${project.version || '未提供'}`;
 
   const feat = document.createElement('p');
   feat.innerHTML = `<strong>協作者：</strong> ${project.feat || '自行製作'}`;
@@ -93,6 +96,7 @@ function createProjectCard(project) {
   card.appendChild(lang);
   card.appendChild(feat);
   card.appendChild(date);
+  card.appendChild(ver);
   card.appendChild(gitlink);
   if (downloadLink) card.appendChild(downloadLink);
   if (link) card.appendChild(link);
