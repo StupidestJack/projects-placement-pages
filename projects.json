@@ -1,5 +1,16 @@
 [
   {
+    "title": "Candyshell",
+    "description": "小時候PowerPoint UI的MDI重構",
+    "language": "C#",
+    "date": "2026-2-3",
+    "version":"1.0.42",
+    "download": "https://github.com/StupidestJack/Candyshell/releases",
+    "github": "Candyshell",
+    "feat": "Gemini",
+    "legacy": false
+  },
+  {
     "title": "Nightly Tree",
     "description": "使用.NET 2.0寫的抗藍光小工具",
     "language": "C#",
