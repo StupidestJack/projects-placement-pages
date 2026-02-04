@@ -43,6 +43,17 @@
     "legacy": false
   },
   {
+    "title": "Gemini 碼表",
+    "description": "丟給 Gemini 重構的實驗碼表",
+    "language": "HTML",
+    "date": "2026-2-4",
+    "version":"2.0",
+    "pages": "geministopwatch",
+    "github": "geministopwatch",
+    "feat": "Gemini",
+    "legacy": false
+  },
+  {
     "title": "實驗用碼表",
     "description": "支援多碼表的秒鐘碼表，自然語言開發就離譜",
     "language": "HTML",
