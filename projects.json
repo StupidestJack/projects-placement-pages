@@ -1,4 +1,14 @@
 [
+    {
+    "title": "我的部落格",
+    "description": "部落格pages",
+    "language": "HTML",
+    "date": "2026-2-5",
+    "pages": "blog",
+    "github": "blog",
+    "feat": "Gemini",
+    "legacy": false
+  },
   {
     "title": "Candyshell",
     "description": "小時候PowerPoint UI的MDI重構",
