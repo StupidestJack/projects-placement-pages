@@ -1,5 +1,5 @@
 [
-    {
+  {
     "title": "我的部落格",
     "description": "部落格pages",
     "language": "HTML",
@@ -29,7 +29,8 @@
     "download": "https://github.com/StupidestJack/NightlyTree/releases",
     "github": "NightlyTree",
     "feat": "Copilot",
-    "legacy": false
+    "legacy": false,
+    "end":true
   },
   {
     "title": "Python赤石科技",
@@ -65,14 +66,15 @@
   },
   {
     "title": "實驗用碼表",
-    "description": "支援多碼表的秒鐘碼表，自然語言開發就離譜",
+    "description": "舊帳號，下台一鞠躬！",
     "language": "HTML",
     "date": "2024-8-17",
     "version":"1.0",
     "pages": "forexperimentstopwatch/stopwatch.html",
     "github": "forexperimentstopwatch",
     "feat": "ChatGPT",
-    "legacy": true
+    "legacy": true,
+    "end":true
   }
 ]
 
