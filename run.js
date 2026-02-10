@@ -42,7 +42,7 @@ function createProjectCard(project) {
 
   //Cards專用div
   const card = document.createElement('div');
-  card.className = 'project-card';
+  card.className = project.ended ? 'project-card ended-project'; : 'project-card';
 
   //標題、說明、語言、日期
   const title = document.createElement('h3');
@@ -62,6 +62,7 @@ function createProjectCard(project) {
 
   const feat = document.createElement('p');
   feat.innerHTML = `<strong>協作者：</strong> ${project.feat || '自行製作'}`;
+
   //GitHub
   const gitbaseURL = project.legacy
     ? 'https://github.com/mamegoodbean2k/'
