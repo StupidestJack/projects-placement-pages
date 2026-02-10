@@ -29,6 +29,9 @@ header {
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.ended-project {
+  background-color: #ffe;
+}
 
 .project-card h3 {
   margin-top: 0;
@@ -58,3 +61,4 @@ footer {
   background-color: #eee;
   font-size: 0.9em;
 }
+
