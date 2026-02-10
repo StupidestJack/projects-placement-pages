@@ -42,7 +42,7 @@ function createProjectCard(project) {
 
   //Cards專用div
   const card = document.createElement('div');
-  card.className = project.ended ? 'project-card ended-project'; : 'project-card';
+  card.className = project.end ? 'project-card ended-project' : 'project-card';
 
   //標題、說明、語言、日期
   const title = document.createElement('h3');
