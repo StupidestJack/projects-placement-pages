@@ -1,5 +1,15 @@
 [
   {
+    "title": "Bean CPU",
+    "description": "基於 C# 的 16-bit CPU 模擬器，人生第一次跟人類合作",
+    "language": "C#",
+    "date": "2026-2-5",
+    "github": "beanCPU",
+    "feat": "SeanOne、Gemini、DeepSeek",
+    "legacy": false,
+    "end":false
+  },
+  {
     "title": "我的部落格",
     "description": "部落格pages",
     "language": "HTML",
